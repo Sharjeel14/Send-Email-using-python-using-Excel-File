@@ -8,13 +8,13 @@ from sqlalchemy import create_engine
 import pandas as pd
 
 # change these as per use
-your_email = "sharjeelr117@gmail.com"
-your_password = "qnwryncwwavzpzql"
+your_email = "youremail@gmail.com"
+your_key = "yourkey"
 
 # establishing connection with gmail
 server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
 server.ehlo()
-server.login(your_email, your_password)
+server.login(your_email, your_key)
 
 # reading the spreadsheet
 email_list = pd.read_excel('C:\\Users\\Malik\\OneDrive\\Desktop\\sample.xlsx')
